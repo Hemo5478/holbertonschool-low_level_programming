@@ -2,7 +2,7 @@
 #include <time.h>
 
 /**
- * main - A program that prints whether the number is pos or neg
+ * main - A program that prints pos or neg
  *
  * Return: Always 0 (Success)
  */
