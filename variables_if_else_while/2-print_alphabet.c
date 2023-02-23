@@ -15,7 +15,7 @@ int main(void)
 	y = 97;
 	while ( i < 26 )
 	{
-		putchar(%d, y);
+		putchar(y);
 		i++;
 		y++;
 	}
