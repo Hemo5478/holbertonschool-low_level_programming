@@ -25,7 +25,7 @@ int main(void)
 		i++;
 		a++;
 	}
-        while (y < 27)
+	while (y < 27)
 	{
 		putchar(b);
 		y++;
