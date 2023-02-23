@@ -19,9 +19,6 @@ int main(void)
 		i++;
 		y++;
 	}
-	if ( i == 26 )
-	{
 		putchar('\n');
-	}
 	return (0);
 }
