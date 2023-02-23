@@ -11,7 +11,7 @@ int main(void)
 {
 	int i;
 	int y;
-	i == 1;
+	i = 1;
 	y = 97;
 	while ( i < 27 )
 	{
