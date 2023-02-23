@@ -13,11 +13,15 @@ int main(void)
 	int y;
 	i = 1;
 	y = 97;
-	while ( i < 26 )
+	while ( i < 27 )
 	{
 		putchar(y);
 		i++;
 		y++;
+	}
+	if ( i == 26 )
+	{
+		putchar(\n);
 	}
 	return (0);
 }
