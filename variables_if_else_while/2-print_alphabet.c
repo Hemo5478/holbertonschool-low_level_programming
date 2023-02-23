@@ -13,7 +13,7 @@ int main(void)
 	int y;
 	i = 1;
 	y = 97;
-	while ( i < 27 )
+	while (i < 27)
 	{
 		putchar(y);
 		i++;
