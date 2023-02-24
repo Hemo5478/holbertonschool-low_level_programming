@@ -6,11 +6,12 @@
  * Return: Always 0 (Success)
  */
 
+void print_alphabet(void)
+
 /**
- * print_alphabet - A function that prints the alphabet in lowercase
+ * print_alphabet - A function that prints alphabets in lowercase
  */
 
-void print_alphabet(void)
 {
 	int i;
 	int y;
