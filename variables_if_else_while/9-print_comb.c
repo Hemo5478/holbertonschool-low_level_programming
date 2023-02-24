@@ -18,6 +18,8 @@ int main(void)
 	while (i < 11)
 	{
 		putchar(y);
+		i++;
+		y++;
 
 	if (y != 57)
 	{
