@@ -21,7 +21,7 @@ int main(void)
 		i++;
 		y++;
 
-	if (y != 57)
+	if (y != 58)
 	{
 		putchar(44);
 		putchar(32);
