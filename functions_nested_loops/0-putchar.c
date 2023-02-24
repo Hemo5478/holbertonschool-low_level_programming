@@ -3,11 +3,11 @@
 #include <time.h>
 
 /**
- * main - A program that prints _putchar
+ * main.h - A program that prints _putchar
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main.h(void)
 {
 	printf("\_putchar\n");
 
