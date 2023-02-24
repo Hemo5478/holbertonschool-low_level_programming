@@ -20,6 +20,8 @@ int main(void)
 	if (y == 57)
 	{
 		putchar(y);
+		i++;
+		y++;
 	}
 	else
 	{
