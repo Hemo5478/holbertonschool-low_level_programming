@@ -21,7 +21,9 @@ int main(void)
 	{
 		i++;
 		y++;
+	}
 	else
+	{
 		putchar(y);
 		i++;
 		y++;
