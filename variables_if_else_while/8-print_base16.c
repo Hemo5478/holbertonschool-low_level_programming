@@ -25,7 +25,7 @@ int main(void)
 	i = 1;
 	y = 97;
 
-	while (i <7)
+	while (i < 7)
 	{
 		putchar(y);
 		i++;
