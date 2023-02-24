@@ -4,7 +4,7 @@
 
 /**
  * main - A program that prints lowercase alphabet without q and e
- *
+u *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 
 	while (i < 27)
 	{
-	if (y == 101) || (y  == 113)
+	if (y == 101) ||(y == 113)
 	{
 		i++;
 		y++;
