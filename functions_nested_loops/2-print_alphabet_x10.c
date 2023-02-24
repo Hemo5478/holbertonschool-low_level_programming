@@ -13,12 +13,13 @@ void print_alphabet_x10(void)
 	int y;
 	int z;
 
-	i = 1;
-	y = 97;
 	z = 1;
 
 	while (z < 11)
 	{
+		i = 1;
+		y = 97;
+
 		while (i < 27)
 		{
 			_putchar(y);
