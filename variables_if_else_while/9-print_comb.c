@@ -17,20 +17,14 @@ int main(void)
 
 	while (i < 11)
 	{
-	if (y == 57)
-	{
 		putchar(y);
-		i++;
-		y++;
-	}
-	else
+
+	if (y != 57)
 	{
-		putchar(y);
 		putchar(44);
 		putchar(32);
-		i++;
-		y++;
 	}
 	}
+		putchar('\n');
 	return (0);
 }
