@@ -1,17 +1,13 @@
 #include "main.h"
 
 /**
- * main - A program that prints alphabet in lowercase
+ * print_alphabet - prints alphabets in lowercase
  *
- * Return: Always 0 (Success)
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 void print_alphabet(void)
-
-/**
- * print_alphabet : A function that prints alphabets in lowercase
- */
-
 {
 	int i;
 	int y;
