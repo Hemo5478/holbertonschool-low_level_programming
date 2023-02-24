@@ -5,20 +5,20 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	int i;
-	int y;
+        int i;
+        int y;
 
-	i = 1;
-	y = 97;
+        i = 1;
+        y = 97;
 
-	while (i < 27)
-	{
-		_putchar(y);
-		i++;
-		y++;
-	}
-		_putchar('\n');
-	return (0);
+        while (i < 27)
+        {
+                _putchar(y);
+                i++;
+                y++;
+        }
+                _putchar('\n');
 }
