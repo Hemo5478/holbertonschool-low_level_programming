@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - A program that prints alphabet letters
+ * main - A program that prints alphabet in lowercase
  *
  * Return: Always 0 (Success)
  */
