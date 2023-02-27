@@ -11,13 +11,11 @@ int print_last_digit(int n)
 {
 	if (n > 0)
 	{
-		n = n+(n*10);
-		return (n);
+		return (n + (n * 10));
 	}
 	else
 	{
-		n = -n;
-		n = n+(n*10);
+		n = -n + (-n * 10);
 		return (n);
 	}
 }
