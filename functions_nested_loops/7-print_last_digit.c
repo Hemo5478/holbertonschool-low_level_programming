@@ -9,21 +9,16 @@
 
 int print_last_digit(int n)
 {
-	if (n > 0)
+	if (n >= 0)
 	{
 		n = n % 10;
-		_putchar('0' + n);
-		return (n);
-	}
-	else if (n < 0)
-	{
-		n = n % 10;
-		_putchar('0' + -n);
+		_putchar(n + '0');
 		return (n);
 	}
 	else
 	{
-		_putchar('0' + 0);
-		return (n);
+		n = -n % 10;
+		_putchar(-n + '0');
+		return (-n);
 	}
 }
