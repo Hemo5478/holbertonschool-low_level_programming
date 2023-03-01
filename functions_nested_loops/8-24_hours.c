@@ -20,7 +20,7 @@ void jack_bauer(void)
 	c=0;
 	d=0;
 
-	while (i < 1441 )
+	while (i < 1440 )
 	{
 		d++;
 
