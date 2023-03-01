@@ -14,31 +14,31 @@ void jack_bauer(void)
 	int c;
 	int d;
 
-	i=1;
-	a=0;
-	b=0;
-	c=0;
-	d=0;
+	i = 1;
+	a = 0;
+	b = 0;
+	c = 0;
+	d = 0;
 
 	while (i < 1441)
 	{
 		if (d > 9)
 		{
-			d=0;
+			d = 0;
 			c++;
 		}
 		if (c > 5)
 		{
-			c=0;
+			c = 0;
 			b++;
 		}
 		if ((b > 3) && (a == 2))
 		{
-			b=0;
+			b = 0;
 		}
 		if ((b > 9) && (a !=2))
 		{
-			b=0;
+			b = 0;
 			a++;
 		}
 
