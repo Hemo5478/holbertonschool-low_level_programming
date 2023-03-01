@@ -52,4 +52,5 @@ void jack_bauer(void)
 	_putchar('\n');
 	i++;
 }
+_putchar('\n');
 }
