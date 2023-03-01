@@ -1,25 +1,17 @@
 #include "main.h"
-
 /**
  * jack_bauer - A function that prints every minute of the day of Jack Bauer
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 void jack_bauer(void)
 {
-	int i;
-	int a;
-	int b;
-	int c;
-	int d;
-
+	int i,a,b,c,d;
 	i = 1;
 	a = 0;
 	b = 0;
 	c = 0;
 	d = 0;
-
 	while (i < 1441)
 	{
 		if (d > 9)
@@ -41,7 +33,6 @@ void jack_bauer(void)
 			b = 0;
 			a++;
 		}
-
 	_putchar(a + '0');
 	_putchar(b + '0');
 	_putchar(':');
