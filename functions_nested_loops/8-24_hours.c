@@ -32,9 +32,9 @@ void jack_bauer(void)
 			c=0;
 			b++;
 		}
-		if ((b > 3) && (a !=2))
+		if ((b > 3) && (a == 2))
 		{
-			b++;
+			b=0;
 		}
 
 	_putchar(a +'0');
