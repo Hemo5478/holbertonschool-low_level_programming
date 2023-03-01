@@ -36,6 +36,11 @@ void jack_bauer(void)
 		{
 			b=0;
 		}
+		if ((b > 9) && (a !=2))
+		{
+			b=0;
+			a++;
+		}
 
 	_putchar(a +'0');
 	_putchar(b +'0');
