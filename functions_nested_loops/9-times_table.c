@@ -1,13 +1,12 @@
 #include "main.h"
 /**
  * times_table - A function that prints the 9 times table, starting with 0
- * 
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 void times_table(void)
 {
-	int a,b,c,y,j,z,i;
+	int a, b, c, y, j, z, i;
 
 	y = 1;
 	a = 0;
@@ -18,7 +17,7 @@ void times_table(void)
 		z = 1;
 		while (j < 10)
 		{
-			a = a*z;
+			a = a * z;
 			i = 1;
 			while (i < 10)
 			{
