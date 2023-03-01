@@ -24,7 +24,7 @@ void times_table(void)
 				b = m + 48;
 				c = 32;
 			}
-			if (m > 10)
+			if (m > 9)
 			{
 				b = (m % 10) + 48;
 				c = (m / 10) + 48;
