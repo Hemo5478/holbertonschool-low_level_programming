@@ -6,7 +6,7 @@
  */
 void times_table(void)
 {
-	int a, b, c, y, j, z;
+	int a, b, c, y, j, z, m;
 
 	y = 1;
 	a = 0;
@@ -15,18 +15,19 @@ void times_table(void)
 		_putchar(48);
 		j = 1;
 		z = 1;
+		m = a;
 		while (j < 10)
 		{
-			a = a * z;
-			if (a < 10)
+			m = a * z;
+			if (m < 10)
 			{
-				b = a + 48;
+				b = m + 48;
 				c = 32;
 			}
-			if (a > 10)
+			if (m > 10)
 			{
-				b = (a % 10) + 48;
-				c = (a / 10) + 48;
+				b = (m % 10) + 48;
+				c = (m / 10) + 48;
 			}
 			_putchar(',');
 			_putchar(32);
