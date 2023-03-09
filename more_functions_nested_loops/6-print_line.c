@@ -14,19 +14,8 @@ void print_line(int n)
 	i = 1;
 	while (i <= n)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-			i = n;
-		}
-		else
-		{
-			_putchar('_');
-		}
+		_putchar('_');
 		i++;
 	}
-	if (n > 0)
-	{
 		_putchar('\n');
-	}
 }
