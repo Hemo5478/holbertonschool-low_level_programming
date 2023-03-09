@@ -2,6 +2,7 @@
 
 /**
  * print_line - A function that draws a straight line in the terminal
+ * @n: A number
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -20,7 +21,7 @@ void print_line(int n)
 		}
 		else
 		{
-			_putchar(32);
+			_putchar('_');
 		}
 		i++;
 	}
