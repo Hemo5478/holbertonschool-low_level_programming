@@ -23,8 +23,15 @@ int main(void)
 		}
 		else if (((i % 5) == 0) && ((i % 3) != 0))
 		{
-			printf("Buzz ");
-			i++;
+			if (i == 100)
+			{
+				printf("Buzz");
+			}
+			else
+			{
+				printf("Buzz ");
+				i++;
+			}
 		}
 		else if (((i % 3) == 0) && ((i % 5) == 0))
 		{
