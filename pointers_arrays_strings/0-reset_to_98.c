@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - A function that takes a pointer and updates the value
- * @*n: A number
+ * @n: A number
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
