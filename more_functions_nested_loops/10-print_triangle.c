@@ -13,6 +13,10 @@ void print_triangle(int size)
 
 	j = 1;
 	a = size;
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
 	while (j <= size)
 	{
 		i = 1; 
