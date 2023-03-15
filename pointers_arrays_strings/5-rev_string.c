@@ -9,7 +9,7 @@
 
 void rev_string(char *s)
 {
-	int i, n, len, j;
+	int i, n, len, j, x;
 	char a;
 
 	i = 0;
@@ -25,7 +25,12 @@ void rev_string(char *s)
 		a = s[j];
 		s[j] = s[n];
 		s[n] = a;
-		j++;
 		n--;
+	}
+	x = 0;
+	while (x <= i)
+	{
+		putchar(s[x]);
+		x++;
 	}
 }
