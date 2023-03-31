@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_reverse_array - A function that reverses the content of an array of integers
+ * *reverse_array - A function that reverses the content of an array of integers
  * @a: An array of integers
  * @n: The number of elements to swap
  * Return: On success 1.
