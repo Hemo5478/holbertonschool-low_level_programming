@@ -8,7 +8,7 @@
 
 char *string_toupper(char *sr)
 {
-	int i, ascii;
+	int i;
 
 	i = 0;
 	while (sr[i] != '\0')
