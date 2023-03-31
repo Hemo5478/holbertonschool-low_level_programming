@@ -6,14 +6,14 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *sr)
 {
 	int i, ascii;
 
 	i = 0;
-	while (*[i] != '\0')
+	while (sr[i] != '\0')
 	{
-		ascii = *[i];
+		ascii = sr[i];
 		if ((ascii > 64) && (ascii < 91))
 		{
 			i++;
@@ -24,5 +24,5 @@ char *string_toupper(char *)
 			i++;
 		}
 	}
-	return (*);
+	return (sr);
 }
