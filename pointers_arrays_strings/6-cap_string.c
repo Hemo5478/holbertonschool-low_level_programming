@@ -17,10 +17,11 @@ char *cap_string(char *sr)
 		if ((sr[i] == ' ') || (sr[i] == ',') || (sr[i] == '.'))
 		{
 			i++;
-		}
-		if ((sr[i] >= 'a') && (sr[i] <= 'z'))
-		{
-			sr[i] = sr[i] - 32;
+			if ((sr[i] >= 'a') && (sr[i] <= 'z'))
+			{
+				sr[i] = sr[i] - 32;
+				i++;
+			}
 		}
 		else
 		{
