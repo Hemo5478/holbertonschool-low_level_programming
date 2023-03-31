@@ -13,14 +13,13 @@ char *string_toupper(char *sr)
 	i = 0;
 	while (sr[i] != '\0')
 	{
-		ascii = sr[i];
-		if ((ascii > 64) && (ascii < 91))
+		if ((sr[i] >= 'A') && (sr[i] <= 'Z'))
 		{
 			i++;
 		}
-		if ((ascii > 96) && (ascii < 123))
+		else if ((sr[i] >= 'a') && (sr[i] <= 'z'))
 		{
-			ascii = ascii - 32;
+			sr[i] = sr[i] - 32;
 			i++;
 		}
 	}
