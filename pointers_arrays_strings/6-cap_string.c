@@ -14,6 +14,12 @@ char *cap_string(char *sr)
 	i = 0;
 	while (sr[i] != '\0')
 	{
+		if ((sr[0] >= 'a') && (sr[0] <= 'z'))
+		{
+			sr[0] = sr[0] - 32;
+			i++;
+			continue;
+		}
 		if ((sr[i] == ' ') || (sr[i] == ',') || (sr[i] == '.'))
 		{
 			i++;
@@ -21,6 +27,7 @@ char *cap_string(char *sr)
 			{
 				sr[i] = sr[i] - 32;
 				i++;
+				continue;
 			}
 		}
 		else
