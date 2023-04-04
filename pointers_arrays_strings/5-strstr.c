@@ -24,14 +24,14 @@ char *_strstr(char *haystack, char *needle)
 				while (needle[j] == haystack[i])
 				{
 					v = 1;
+					i++;
+					j++;
 				}
-				else
+				if (needle[j] != haystack[i])
 				{
 					v = 0;
 					break;
 				}
-				i++;
-				j++;
 			}
 			j++;
 			i++;
