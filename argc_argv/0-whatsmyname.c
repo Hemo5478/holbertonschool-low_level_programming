@@ -2,6 +2,8 @@
 
 /**
  * *main - A program that prints its name
+ * *@argc: a number
+ * *@argv: a string
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
