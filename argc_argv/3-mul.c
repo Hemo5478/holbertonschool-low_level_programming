@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *main - A program that prints the number of arguments passed into it
+ * *main - A program that multiplies two numbers
  * *@argc: a number
  * *@argv: a string
  * Return: On success 1.
