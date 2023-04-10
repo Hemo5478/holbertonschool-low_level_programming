@@ -44,3 +44,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void _puts_recursion(char *s);
+char *create_array(unsigned int size, char c);
