@@ -14,14 +14,19 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return ('\0');
+		return (NULL);
 	}
 
 	size = _strlen(str) + 1;
 	char *str2 = malloc(size * sizeof(char));
 
+	if (str2 == NULL)
+	{
+		return (NULL);
+	}
+
 	_memcpy(str2, str, size);
 
-	free (str2);
 	return (str2);
+	free (str2);
 }
