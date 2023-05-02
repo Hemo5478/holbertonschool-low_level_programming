@@ -10,15 +10,18 @@
 
 char *_strdup(char *str)
 {
-	char *str2;
-	int len;
+	size_t size;
 
-	str2 = (char*) malloc(size * sizeof(char));
-	len = _strlen(str);
-	_memcpy(str2, str, len);
 	if (str == NULL)
 	{
 		return ('\0');
 	}
+
+	size = _strlen(str) + 1;
+	char *str2 = malloc(size * sizeof(char));
+
+	_memcpy(str2, str, size);
+
+	free (str2);
 	return (str2);
 }
