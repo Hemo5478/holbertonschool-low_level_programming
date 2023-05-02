@@ -11,6 +11,7 @@
 char *_strdup(char *str)
 {
 	size_t size;
+	char *str2;
 
 	if (str == NULL)
 	{
@@ -18,7 +19,7 @@ char *_strdup(char *str)
 	}
 
 	size = _strlen(str) + 1;
-	char *str2 = malloc(size * sizeof(char));
+	str2 = malloc(size * sizeof(char));
 
 	if (str2 == NULL)
 	{
@@ -28,5 +29,4 @@ char *_strdup(char *str)
 	_memcpy(str2, str, size);
 
 	return (str2);
-	free (str2);
 }
