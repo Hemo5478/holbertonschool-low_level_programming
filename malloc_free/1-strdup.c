@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * *_strdup - A function that returns a poiwer to a newly allocated space
@@ -18,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	size = _strlen(str) + 1;
+	size = strlen(str) + 1;
 	str2 = malloc(size * sizeof(char));
 
 	if (str2 == NULL)
@@ -26,7 +27,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	_memcpy(str2, str, size);
+	memcpy(str2, str, size);
 
 	return (str2);
 }
