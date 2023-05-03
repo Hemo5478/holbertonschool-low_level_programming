@@ -3,16 +3,17 @@
 #include <string.h>
 
 /**
- * *alloc_grid - A function that returns a pointer to a 2 dimensional array of integers.
+ * *alloc_grid - A function that returns a pointer to a 2 dimensional
  * * @width: The number of columns in the grid
  * * @height: The number of rows in the grid
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int **alloc_grid(int width, int height) 
+int **alloc_grid(int width, int height)
 {
 	int i, j, **grid;
+
 	i = 0;
 	j = 0;
 
