@@ -23,12 +23,12 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	
+
 	rs = 0;
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		rs = rs * 10 + (s[i] - '0');
 		i++;
 	}
-	return rs * sn;
+	return (rs * sn);
 }
