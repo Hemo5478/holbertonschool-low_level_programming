@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 		{"i", print_d},
 		{"f", print_f}
 	};
-	
+
 	x = 0;
 	va_start(hemo, format);
 	while (format && (*(format + x)))
