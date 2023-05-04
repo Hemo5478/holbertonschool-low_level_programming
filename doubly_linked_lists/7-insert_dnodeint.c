@@ -15,21 +15,21 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *new_node, *current;
 	unsigned int y;
 
-  	if (idx == 0)
+	if (idx == 0)
 		return (add_dnodeint(h, n));
   
 	if (h == NULL)
 		return (NULL);
 
 	current = *h;
-  y = 0;
+	y = 0;
 	while (y < idx - 1)
-{
-	if (current)
-		return (NULL);
-	current = current->next;
-	y++;
-}
+	{
+		if (current)
+			return (NULL);
+		current = current->next;
+		y++;
+	}
 
 	if (!current)
 		return (NULL);
