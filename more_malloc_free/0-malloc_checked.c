@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - A function that allocates memory using malloc 
+ * *malloc_checked - A function that allocates memory using malloc
  * *@b: The size of the memory block
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
