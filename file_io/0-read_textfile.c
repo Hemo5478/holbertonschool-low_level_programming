@@ -45,12 +45,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		}
 	}
 
-	if (nread == -1)
-	{
-		close(fd);
-		return (0);
-	}
-
 	buf[tot_read] = '\0';
 
 	close(fd);
