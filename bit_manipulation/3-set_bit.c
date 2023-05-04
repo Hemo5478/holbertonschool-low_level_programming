@@ -10,8 +10,6 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int ugh;
-
 	if (!n)
 	{
 		return (-1);
@@ -22,7 +20,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	}
 
-	ugh = ((unsigned long int) 1) << index;
-	*n = (*n | ugh);
+	*n |= 1UL << index;
 	return (1);
 }
