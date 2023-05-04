@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * read_textfile - A function that reads a text file and prints it
  * @filename: A filename
@@ -43,6 +44,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			break;
 		}
 	}
+
+	buf[tot_read] = '\0';
 
 	close(fd);
 	return (tot_read);
