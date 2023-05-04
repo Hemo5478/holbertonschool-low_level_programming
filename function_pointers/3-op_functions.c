@@ -1,31 +1,63 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
 
 /**
- * get_op_func - selects the correct function to perform the operation 
- * @s: operation given (+, *, -, /, %)
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * op_add - The addition of two integers
+ * @a: integer
+ * @b: integer
+ * Return: The Summary
  */
 
-int (*get_op_func(char *s))(int a, int b)
+int op_add(int a, int b)
 {
-  int y;
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
+	return (a + b);
+}
 
-	y = 0;
-	while (ops[y].op != NULL)
-	{
-		if (*s == *ops[y].op)
-			return (ops[y].f);
-		y++;
-	}
-	return (NULL);
+/**
+ * op_sub - Subtraction of a and b
+ * @a: integer
+ * @b: integer
+ * Return: The difference
+ */
+
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - Multiply a and b
+ * @a: integer
+ * @b: integer
+ * Return: Product
+ */
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - The division of a by b
+ * @a: integer
+ * @b: integer
+ * Return: a div b, or NULL if b is zero
+ */
+
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+ * op_mod - The rest of the division of a by b
+ * @a: integer
+ * @b: integer
+ * Return: a % b, or NULL if b is zero
+ */
+
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
