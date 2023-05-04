@@ -7,8 +7,8 @@
 /**
  * struct dlistint_s - Doubly linked list node structure.
  * @n: Integer stored
- * @prev: Pointer
- * @next: Pointer
+ * @prev: A pointer to the prev elem
+ * @next: A pointer to the next elem
  */
 
 typedef struct dlistint_s
@@ -21,5 +21,6 @@ typedef struct dlistint_s
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
 #endif
