@@ -61,7 +61,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concat[x] = s1[x];
 		x++;
 	}
-
 	y = 0;
 	while (y < n)
 	{
