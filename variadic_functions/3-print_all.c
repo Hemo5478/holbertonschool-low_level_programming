@@ -1,86 +1,98 @@
-#include <stdarg.h>
+#include <stdlib.h>
 #include <stdio.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
- * print_char - prints char
- * @hemo: valist
+ * print_s -print string
+ * @hemo: va_list
+ * Return: none
  */
 
-void print_char(va_list hemo)
-{
-	printf("%c", va_arg(hemo, int));
-}
-
-/**
- * print_int - prints int
- * @hemo: valist
- */
-void print_int(va_list hemo)
-{
-	printf("%d", va_arg(hemo, int));
-}
-
-/**
- * print_float - prints float
- * @hemo: valist
- */
-void print_float(va_list hemo)
-{
-	printf("%f", va_arg(hemo, double));
-}
-
-/**
- * print_string - prints string
- * @hemo: valist
- */
-void print_string(va_list hemo)
+void print_s(va_list hemo)
 {
 	char *s;
 
 	s = va_arg(hemo, char *);
-
-	if (s == NULL)
+	if (!s)
 	{
 		printf("(nil)");
 		return;
 	}
 	printf("%s", s);
 }
+/**
+ * print_c -print character
+ * @hemo: va_list
+ * Return: none
+ */
+void print_c(va_list hemo)
+{
+	char c;
+
+	c = va_arg(hemo, int);
+	printf("%c", c);
+}
+/**
+ * print_d -print integer
+ * @hemo: va_list
+ * Return: none
+ */
+void print_d(va_list hemo)
+{
+	int d;
+
+	d = va_arg(hemo, int);
+	printf("%d", d);
+}
+/**
+ * print_f -print float
+ * @hemo: va_list
+ * Return: none
+ */
+void print_f(va_list hemo)
+{
+	float f;
+
+	f = va_arg(hemo, double);
+	printf("%f", f);
+}
 
 /**
- * print_all - print varying input of ints, chars, floats, and strings
- * @format: an array of chars signifying which data type to print
+ * print_all - print many tyme of arguments
+ * @format: string tha give us the types of the arguments
+ * Return:none
  */
 void print_all(const char * const format, ...)
 {
-	char *separator = "";
 	int x, y;
+	char *sep = "";
 	va_list hemo;
-	
-	y = 0;
-	datatype choice[] = { {'c', print_char},
-			      {'i', print_int},
-			      {'f', print_float},
-			      {'s', print_string},
-			      {'\0', NULL} };
 
+	print_t tpt[] = {
+		{"s", print_s},
+		{"c", print_c},
+		{"i", print_d},
+		{"f", print_f}
+	};
+	
+	x = 0;
 	va_start(hemo, format);
-	while (format != NULL && format[y] != '\0')
+	while (format && (*(format + x)))
 	{
-		x = 0;
-		while (choice[x].letter != '\0')
+		y = 0;
+		while (y < 4 && (*(format + x) != *(tpt[y].c)))
 		{
-			if (choice[x].letter == format[y])
-			{
-				printf("%s", separator);
-				choice[x].func(hemo);
-				separator = ", ";
-			}
-			x++;
+			y++;
 		}
-		y++;
+		if (y < 4)
+		{
+			printf("%s", sep);
+			tpt[y].print_func(hemo);
+			sep = ", ";
+		}
+		x++;
 	}
-	va_end(hemo);
 	printf("\n");
+	va_end(hemo);
 }
