@@ -5,6 +5,14 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * struct hash_node_s - Node of a hash table
+ *
+ * @key: A string
+ * @value: A value that scales with the key
+ * @next: A pointer
+ */
+
 typedef struct hash_node_s
 {
 	char *key;
